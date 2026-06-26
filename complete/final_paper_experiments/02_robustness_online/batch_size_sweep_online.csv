@@ -1,0 +1,51 @@
+batch_size,method,top1,delta_vs_clip,num_corruptions,note
+1,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+1,CLIP + CBC,66.83133363723755,6.640666723251343,15,corruption-wise macro over 15 corruptions
+1,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+1,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+1,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+2,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+2,CLIP + CBC,57.022666335105896,-3.16800057888031,15,corruption-wise macro over 15 corruptions
+2,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+2,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+2,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+4,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+4,CLIP + CBC,62.25933392842611,2.068667014439901,15,corruption-wise macro over 15 corruptions
+4,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+4,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+4,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+8,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+8,CLIP + CBC,64.26866670449574,4.0779997905095415,15,corruption-wise macro over 15 corruptions
+8,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+8,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+8,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+16,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+16,CLIP + CBC,65.56333382924397,5.3726669152577715,15,corruption-wise macro over 15 corruptions
+16,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+16,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+16,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+32,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+32,CLIP + CBC,66.21266603469849,6.02199912071228,15,corruption-wise macro over 15 corruptions
+32,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+32,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+32,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+64,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+64,CLIP + CBC,66.582666238149,6.391999324162801,15,corruption-wise macro over 15 corruptions
+64,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+64,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+64,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+128,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+128,CLIP + CBC,66.72533353169759,6.534666617711385,15,corruption-wise macro over 15 corruptions
+128,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+128,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+128,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+256,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+256,CLIP + CBC,66.74266596635182,6.551999052365621,15,corruption-wise macro over 15 corruptions
+256,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+256,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+256,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison
+512,CLIP,60.190666913986206,0.0,15,corruption-wise macro over 15 corruptions
+512,CLIP + CBC,66.80066645145416,6.6099995374679565,15,corruption-wise macro over 15 corruptions
+512,CALIP,57.402667005856834,-2.787999908129372,15,batch-independent corruption-wise macro score repeated for comparison
+512,WaffleCLIP,63.20428601333073,3.013619099344524,15,batch-independent corruption-wise macro score repeated for comparison
+512,CuPL,63.076666593551636,2.8859996795654297,15,batch-independent corruption-wise macro score repeated for comparison

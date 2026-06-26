@@ -1,0 +1,13 @@
+{
+  "centroid_2d_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/brightness/cbc_class_centroid_shift_2d_brightness.csv",
+  "centroid_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/brightness/cbc_class_centroid_shift_3d_brightness.csv",
+  "corruption": "brightness",
+  "delta_norm": 0.23331022262573242,
+  "least_squares_residual_l2": 1.3328003944934608e-07,
+  "logit_bias_l2": 0.6690702438354492,
+  "num_samples": 2000,
+  "output_2d_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/brightness/cbc_class_centroid_shift_2d_brightness.pdf",
+  "output_2d_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/brightness/cbc_class_centroid_shift_2d_brightness.png",
+  "output_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/brightness/cbc_class_centroid_shift_3d_brightness.pdf",
+  "output_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/brightness/cbc_class_centroid_shift_3d_brightness.png"
+}

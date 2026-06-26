@@ -1,0 +1,9 @@
+setting,method,top1,delta_vs_clip,num_samples,category,note,selected_for_extended_clean_tables
+clean,CLIP,89.2799973487854,0.0,10000,online,reference_default_prompt,False
+clean,CorruptedPrompt,89.60999846458435,0.3300011157989502,10000,online,generic_corruption_prompt,False
+clean,PromptEns-8,90.89000225067139,1.6100049018859863,10000,online,CLIP_select_prompt_feature_average,True
+clean,PromptEns-80,90.86999893188477,1.5900015830993652,10000,online,CLIP_all_prompt_feature_average,True
+clean,LogitEns-8,90.77000021934509,1.4900028705596924,10000,online,CLIP_select_prompt_logit_average,True
+clean,LogitEns-80,90.81000089645386,1.530003547668457,10000,online,CLIP_all_prompt_logit_average,True
+clean,AdaptivePromptEns-80,90.85000157356262,1.5700042247772217,10000,online,AutoCLIP_style_per_image_prompt_weighting,True
+clean,Waffle+PromptEns,90.88000059127808,1.6000032424926758,10000,online,WaffleCLIP_descriptors_plus_CLIP_prompt_ensemble,True

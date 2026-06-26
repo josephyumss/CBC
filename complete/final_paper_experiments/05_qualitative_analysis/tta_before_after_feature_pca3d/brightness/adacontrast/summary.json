@@ -1,0 +1,32 @@
+{
+  "adaptation_batches": 13,
+  "centroid_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/tta_before_after_feature_pca3d/brightness/adacontrast/adacontrast_brightness_centroids_pca3d.csv",
+  "corruption": "brightness",
+  "feature_update_type": "visual_encoder_or_method_state",
+  "max_class_centroid_l2_delta": 0.17953602969646454,
+  "max_feature_l2_delta": 0.5026559829711914,
+  "mean_class_centroid_l2_delta": 0.1487816423177719,
+  "mean_feature_l2_delta": 0.25218117237091064,
+  "method": "adacontrast",
+  "method_cli_tokens": [
+    "--adaptation",
+    "adacontrast",
+    "--batch_size",
+    "64",
+    "--optimizer_type",
+    "sgd",
+    "--lr",
+    "1e-3",
+    "--beta_reg",
+    "0.0"
+  ],
+  "num_samples": 800,
+  "output_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/tta_before_after_feature_pca3d/brightness/adacontrast/adacontrast_brightness_before_after_features_pca3d.pdf",
+  "output_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/tta_before_after_feature_pca3d/brightness/adacontrast/adacontrast_brightness_before_after_features_pca3d.png",
+  "plain_text_head_top1_after": 82.99999833106995,
+  "plain_text_head_top1_before": 83.37500095367432,
+  "runtime_batch_size": 64,
+  "runtime_steps": 10,
+  "severity": 5,
+  "status": "success"
+}

@@ -1,0 +1,6 @@
+method,top1,delta_vs_clip,num_samples,source
+CLIP,72.77053594589233,0.0,750000,actual mixed-severity CLIP run
+CLIP + CBC,76.45599842071533,3.685462474822998,750000,actual mixed-severity CBC run
+CALIP,69.86559867858887,-2.904937267303467,750000,weighted average of severity 1-5 rows; equal sample count per severity
+WaffleCLIP,75.54049525942122,2.7699593135288865,750000,weighted average of severity 1-5 rows; equal sample count per severity
+CuPL,75.05280137062073,2.2822654247283936,750000,weighted average of severity 1-5 rows; equal sample count per severity

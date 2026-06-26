@@ -1,0 +1,6 @@
+{
+  "by_corruption_center_scope": "all 10000 samples of the given corruption",
+  "definition": "CBC Offline subtracts one global class-logit center computed from the complete test split logits/features before prediction.",
+  "note": "Because CLIP logits are linear in image features and fixed text prototypes, centering logits is equivalent to using the whole-split feature mean projected onto class prototypes.",
+  "overall_center_scope": "all 150000 CIFAR-10-C severity-5 samples"
+}

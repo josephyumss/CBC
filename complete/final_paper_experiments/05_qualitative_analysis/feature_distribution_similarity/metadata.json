@@ -1,0 +1,28 @@
+{
+  "base_model_name": "clip-ViT-B/16",
+  "clean_dataset": "cifar10",
+  "corrupted_dataset": "cifar10c",
+  "corruptions": [
+    "brightness",
+    "contrast",
+    "defocus_blur",
+    "elastic_transform",
+    "fog",
+    "frost",
+    "gaussian_noise",
+    "glass_blur",
+    "impulse_noise",
+    "jpeg_compression",
+    "motion_blur",
+    "pixelate",
+    "shot_noise",
+    "snow",
+    "zoom_blur"
+  ],
+  "family": "cifar10",
+  "main_metric": "global_covariance_similarity",
+  "max_samples_per_class": null,
+  "num_samples": 10000,
+  "severity": 5,
+  "shape_normalization": "Features are already CLIP L2-normalized. For shape-only comparison, we subtract the distribution mean and divide by RMS radius before computing covariance similarity."
+}

@@ -1,0 +1,31 @@
+{
+  "base_model_name": "clip-ViT-B/16",
+  "clean_dataset": "cifar10",
+  "corrupted_dataset": "cifar10c",
+  "corruptions": [
+    "brightness",
+    "glass_blur"
+  ],
+  "excluded_method": "cliptta",
+  "family": "cifar10",
+  "methods": [
+    "clipartt",
+    "unient",
+    "stamp",
+    "tda",
+    "adacontrast",
+    "watt",
+    "watt_otsu",
+    "watt_unient",
+    "etta"
+  ],
+  "no_visual_encoder_update_methods": {
+    "etta": "ETTA updates a cache-enhanced classifier, not the visual encoder; feature distribution is expected to remain unchanged.",
+    "tda": "TDA updates positive/negative feature caches, not the visual encoder; feature distribution is expected to remain unchanged."
+  },
+  "num_samples": 800,
+  "samples_per_class": 80,
+  "seed": 42,
+  "severity": 5,
+  "template": "a photo of a {}"
+}

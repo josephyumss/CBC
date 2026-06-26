@@ -1,0 +1,19 @@
+{
+  "azim": -58.0,
+  "base_model": "clip-ViT-B/16",
+  "batch_size": 128,
+  "corruptions": [
+    "brightness",
+    "glass_blur"
+  ],
+  "elev": 22.0,
+  "logit_scale": 100.0,
+  "lr": 1e-05,
+  "note": "CBC is applied only to pseudo-label logits; the final feature trajectory comes from visual encoder updates.",
+  "samples_per_class": 80,
+  "severity": 5,
+  "steps": 10,
+  "template": "a photo of a {}",
+  "tta_adapter": "controlled STAMP-style visual-LN pseudo-label adapter",
+  "weight_decay": 0.0
+}

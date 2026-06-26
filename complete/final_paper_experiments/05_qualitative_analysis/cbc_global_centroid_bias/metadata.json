@@ -1,0 +1,14 @@
+{
+  "base_model_name": "clip-ViT-B/16",
+  "cbc_setting": "offline/global: all test samples in one corruption are used to estimate and subtract the CBC class-logit bias.",
+  "clean_dataset": "cifar10",
+  "corrupted_dataset": "cifar10c",
+  "corruptions": [
+    "brightness",
+    "shot_noise"
+  ],
+  "family": "cifar10",
+  "interpretation": "CBC is applied in logit space as logits - mean_logits over all test samples. For feature-space visualization, we use the minimum-norm feature displacement whose projection onto text prototypes reproduces the centered class-logit bias.",
+  "severity": 5,
+  "template": "a photo of a {}"
+}

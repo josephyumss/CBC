@@ -1,0 +1,13 @@
+{
+  "centroid_2d_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/glass_blur/cbc_class_centroid_shift_2d_glass_blur.csv",
+  "centroid_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/glass_blur/cbc_class_centroid_shift_3d_glass_blur.csv",
+  "corruption": "glass_blur",
+  "delta_norm": 0.23385527729988098,
+  "least_squares_residual_l2": 2.6572575961836264e-07,
+  "logit_bias_l2": 0.6741416454315186,
+  "num_samples": 2000,
+  "output_2d_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/glass_blur/cbc_class_centroid_shift_2d_glass_blur.pdf",
+  "output_2d_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/glass_blur/cbc_class_centroid_shift_2d_glass_blur.png",
+  "output_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/glass_blur/cbc_class_centroid_shift_3d_glass_blur.pdf",
+  "output_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_class_centroid_shift_3d/glass_blur/cbc_class_centroid_shift_3d_glass_blur.png"
+}

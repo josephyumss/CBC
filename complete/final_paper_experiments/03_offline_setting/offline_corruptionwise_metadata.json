@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-23",
+  "severity": 5,
+  "seed": 42,
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "definition": "Corruption-wise severity-5 protocol. Batch sweep computes CBC separately for each corruption and averages over 15 corruptions, matching the main result protocol.",
+  "offline_definition": "CBC Offline, InMaP, and Frolic are each evaluated separately on the full 10k samples of each corruption, then macro-averaged over corruptions.",
+  "elapsed_sec": 225.2557716369629
+}

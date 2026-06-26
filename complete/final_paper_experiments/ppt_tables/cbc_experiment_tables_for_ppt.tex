@@ -1,0 +1,416 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=0.45in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{helvet}
+\pagestyle{empty}
+\definecolor{BestBlue}{HTML}{1F4E79}
+\newcommand{\best}[1]{\textbf{\textcolor{BestBlue}{#1}}}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{4.2pt}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries CBC Experiment Tables for PPT}\\[1mm]
+{\normalsize Source: \texttt{complete/final\_paper\_experiments}. Values are Top-1 accuracy (\%) unless noted.}\\
+\end{center}
+
+\begin{center}
+{\Large\bfseries Zero-shot CLIP under clean/corrupted conditions}\\[-0.5mm]
+{\normalsize Top-1 accuracy (\%). Online methods use the same default prompt setting.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrl}
+\toprule
+Setting & CLIP & CBC & CALIP & Waffle & CuPL & CBC - CLIP & Notes \\
+\midrule
+Clean & 89.25 & \best{91.16} & 86.89 & 90.77 & 90.33 & +1.91 & CIFAR-10 clean \\
+Corruption S5 macro & 60.19 & \best{66.73} & 57.40 & 63.20 & 63.08 & +6.53 & Mean over 15 corruption-specific runs \\
+Corruption S5 mixed & 60.19 & \best{64.73} & 57.40 & 63.20 & 63.08 & +4.54 & All 15 corruptions pooled/mixed \\
+Severity 1--5 mixed & 72.77 & \best{76.46} & 69.87 & 75.54 & 75.05 & +3.69 & All severities 1--5 pooled/mixed \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Main result by corruption type}\\[-0.5mm]
+{\normalsize CIFAR-10-C severity 5, corruption-specific evaluation. Top-1 accuracy (\%).}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Corruption & CLIP & CBC & CALIP & Waffle & CuPL & CBC - CLIP \\
+\midrule
+brightness & 83.41 & \best{86.70} & 80.57 & 85.72 & 85.92 & +3.29 \\
+contrast & 61.94 & \best{66.92} & 60.72 & 62.02 & 63.23 & +4.98 \\
+defocus blur & 70.05 & \best{74.67} & 66.44 & 73.22 & 71.97 & +4.62 \\
+elastic transform & 53.16 & \best{60.90} & 49.12 & 56.53 & 56.71 & +7.74 \\
+fog & 68.43 & \best{73.02} & 65.30 & 72.29 & 70.60 & +4.59 \\
+frost & 76.62 & 79.29 & 73.14 & \best{79.59} & 78.21 & +2.67 \\
+gaussian noise & 37.83 & \best{48.40} & 37.09 & 39.47 & 41.98 & +10.57 \\
+glass blur & 42.20 & \best{48.05} & 39.53 & 43.62 & 40.76 & +5.85 \\
+impulse noise & 51.72 & \best{62.63} & 48.65 & 58.10 & 59.46 & +10.91 \\
+jpeg compression & 56.13 & \best{62.44} & 53.23 & 62.10 & 60.08 & +6.31 \\
+motion blur & 65.88 & \best{72.62} & 62.33 & 70.79 & 70.87 & +6.74 \\
+pixelate & 48.44 & \best{57.33} & 45.55 & 49.38 & 49.99 & +8.89 \\
+shot noise & 41.19 & \best{52.83} & 39.78 & 44.34 & 46.84 & +11.64 \\
+snow & 73.31 & \best{77.71} & 69.95 & 76.09 & 75.02 & +4.40 \\
+zoom blur & 72.55 & \best{77.37} & 69.64 & 74.81 & 74.51 & +4.82 \\
+Avg. & 60.19 & \best{66.73} & 57.40 & 63.20 & 63.08 & +6.53 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Robustness to corruption severity}\\[-0.5mm]
+{\normalsize Severity 0 is clean CIFAR-10; severities 1--10 are CIFAR-10-C/extrapolated severity sweep.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{crrrrrr}
+\toprule
+Severity & CLIP & CBC & CALIP & Waffle & CuPL & CBC - CLIP \\
+\midrule
+0 & 89.25 & \best{91.16} & 86.89 & 90.77 & 90.33 & +1.91 \\
+1 & 82.54 & \best{85.43} & 79.70 & 84.85 & 84.27 & +2.88 \\
+2 & 78.53 & \best{81.79} & 75.55 & 81.17 & 80.43 & +3.26 \\
+3 & 73.93 & \best{77.73} & 70.98 & 76.86 & 76.37 & +3.80 \\
+4 & 68.69 & \best{72.73} & 65.69 & 71.62 & 71.11 & +4.04 \\
+5 & 60.19 & \best{64.73} & 57.40 & 63.20 & 63.08 & +4.54 \\
+6 & 56.24 & \best{60.28} & 53.68 & 58.87 & 58.71 & +4.04 \\
+7 & 52.29 & \best{55.77} & 50.00 & 54.54 & 54.13 & +3.48 \\
+8 & 48.45 & \best{51.64} & 46.34 & 50.52 & 50.01 & +3.19 \\
+9 & 45.13 & \best{48.38} & 43.01 & 47.33 & 46.64 & +3.25 \\
+10 & 42.46 & \best{45.92} & 40.66 & 44.87 & 44.50 & +3.45 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries CBC sensitivity to batch size}\\[-0.5mm]
+{\normalsize CIFAR-10-C severity 5 mixed corruptions. Non-CBC methods are batch-independent and repeated.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{crrrrrr}
+\toprule
+Batch & CLIP & CBC & CALIP & Waffle & CuPL & CBC - CLIP \\
+\midrule
+1 & 60.19 & \best{64.97} & 57.40 & 63.20 & 63.08 & +4.78 \\
+2 & 60.19 & 55.87 & 57.40 & \best{63.20} & 63.08 & -4.32 \\
+4 & 60.19 & 60.54 & 57.40 & \best{63.20} & 63.08 & +0.35 \\
+8 & 60.19 & 62.52 & 57.40 & \best{63.20} & 63.08 & +2.32 \\
+16 & 60.19 & \best{63.63} & 57.40 & 63.20 & 63.08 & +3.44 \\
+32 & 60.19 & \best{64.24} & 57.40 & 63.20 & 63.08 & +4.05 \\
+64 & 60.19 & \best{64.55} & 57.40 & 63.20 & 63.08 & +4.36 \\
+128 & 60.19 & \best{64.73} & 57.40 & 63.20 & 63.08 & +4.54 \\
+256 & 60.19 & \best{64.83} & 57.40 & 63.20 & 63.08 & +4.64 \\
+512 & 60.19 & \best{64.91} & 57.40 & 63.20 & 63.08 & +4.72 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Class imbalance robustness}\\[-0.5mm]
+{\normalsize Mean Top-1 over 15 corruptions \$	imes\$ 10 target classes. Selected imbalance levels from the 0--100 sweep.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{crrrrrr}
+\toprule
+Imbalance (\%) & CLIP & CBC & CALIP & Waffle & CuPL & CBC - CLIP \\
+\midrule
+0 & 60.19 & \best{66.73} & 57.40 & 63.20 & 63.08 & +6.53 \\
+25 & 60.19 & \best{66.59} & 57.41 & 63.19 & 63.05 & +6.40 \\
+50 & 60.18 & \best{66.23} & 57.38 & 63.17 & 63.03 & +6.05 \\
+75 & 60.24 & \best{64.25} & 57.47 & 63.30 & 63.13 & +4.01 \\
+86 & 60.15 & 60.39 & 57.40 & \best{63.17} & 62.99 & +0.24 \\
+100 & 60.19 & 28.65 & 57.40 & \best{63.20} & 63.08 & -31.54 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Clean image evaluation}\\[-0.5mm]
+{\normalsize CIFAR-10 clean Top-1 accuracy (\%). Extended online prompt baselines are included for screening.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\begin{tabular}{lrrc}
+\toprule
+Method & Top-1 & Delta vs CLIP & Batch \\
+\midrule
+CLIP & 89.25 & +0.00 & -- \\
+CBC & 91.16 & +1.91 & 128 \\
+CBC-Off. & \best{91.21} & +1.94 & offline \\
+CALIP & 86.89 & -2.36 & -- \\
+Waffle & 90.77 & +1.52 & -- \\
+CuPL & 90.33 & +1.08 & -- \\
+PE-8 & 90.89 & +1.61 & -- \\
+PE-80 & 90.87 & +1.59 & -- \\
+LE-8 & 90.77 & +1.49 & -- \\
+LE-80 & 90.81 & +1.53 & -- \\
+AdaPE-80 & 90.85 & +1.57 & -- \\
+Waffle+PE & 90.88 & +1.60 & -- \\
+\bottomrule
+\end{tabular}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Offline / transductive zero-shot setting}\\[-0.5mm]
+{\normalsize CIFAR-10-C severity 5, all 15 corruptions. Methods can use full target-set statistics/features.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrp{8.2cm}}
+\toprule
+Method & Top-1 & Delta vs CLIP & Source / note \\
+\midrule
+CLIP & 60.19 & +0.00 & logit cache \\
+CBC-Off. & 64.98 & +4.79 & single global center from all 150k severity-5 logits \\
+InMaP & \best{67.23} & +7.03 & full-suite transductive result \\
+Frolic & 66.76 & +6.57 & full-suite transductive result \\
+Sinkhorn & 61.34 & +1.15 & balanced optimal-transport assignment on all logits \\
+PriorNorm & 64.55 & +4.35 & global predicted-prior normalization \\
+LabelProp & 58.39 & -1.81 & per-corruption kNN propagation, k=20, alpha=0.5, iters=10 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Offline setting by corruption type}\\[-0.5mm]
+{\normalsize CIFAR-10-C severity 5, corruption-specific Top-1 accuracy (\%).}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Corruption & CLIP & CBC-Off. & InMaP & Frolic & CBC-Off. - CLIP \\
+\midrule
+brightness & 83.42 & 86.69 & \best{88.61} & 87.29 & +3.27 \\
+contrast & 61.94 & 67.13 & \best{71.12} & 70.13 & +5.19 \\
+defocus blur & 70.06 & 74.90 & \best{77.03} & 76.38 & +4.84 \\
+elastic transform & 53.18 & 60.95 & \best{63.20} & 62.60 & +7.77 \\
+fog & 68.45 & 73.06 & \best{75.99} & 74.50 & +4.61 \\
+frost & 76.61 & 79.59 & \best{81.95} & 80.77 & +2.98 \\
+gaussian noise & 37.73 & 48.56 & 51.69 & \best{51.99} & +10.83 \\
+glass blur & 42.18 & 48.08 & \best{49.91} & 49.74 & +5.90 \\
+impulse noise & 51.77 & 62.94 & \best{65.83} & 65.66 & +11.17 \\
+jpeg compression & 56.14 & 62.71 & \best{65.89} & 64.47 & +6.57 \\
+motion blur & 65.87 & 72.85 & \best{75.22} & 74.41 & +6.98 \\
+pixelate & 48.48 & 57.45 & \best{60.79} & 59.90 & +8.97 \\
+shot noise & 41.17 & 52.86 & \best{55.37} & 55.17 & +11.69 \\
+snow & 73.30 & 77.69 & \best{80.12} & 79.01 & +4.39 \\
+zoom blur & 72.56 & 77.51 & \best{79.73} & 79.01 & +4.95 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Additional online zero-shot screening baselines}\\[-0.5mm]
+{\normalsize Cache-based screening variants. These are useful appendix/sanity baselines rather than all official reproductions.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Method & S5 Top-1 & Delta S5 & Clean Top-1 & Delta Clean \\
+\midrule
+CLIP & 60.20 & +0.00 & 89.28 & +0.00 \\
+CorruptedPrompt & 60.19 & -0.01 & 89.61 & +0.33 \\
+PE-8 & 63.04 & +2.84 & 90.89 & +1.61 \\
+PE-80 & 62.75 & +2.56 & 90.87 & +1.59 \\
+LE-8 & 62.83 & +2.64 & 90.77 & +1.49 \\
+LE-80 & 62.59 & +2.40 & 90.81 & +1.53 \\
+AdaPE-80 & 62.72 & +2.53 & 90.85 & +1.57 \\
+Waffle+PE & 62.77 & +2.57 & 90.88 & +1.60 \\
+\bottomrule
+\end{tabular}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries CBC with TTA methods}\\[-0.5mm]
+{\normalsize CIFAR-10-C severity 5, macro average over 15 corruptions. Wins count indicates corruptions improved by CBC.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+TTA method & Raw & +CBC & Delta & Wins / 15 \\
+\midrule
+watt & 52.75 & 74.93 & +22.18 & 13 \\
+watt\_unient & 64.84 & 75.11 & +10.28 & 13 \\
+stamp & 60.17 & 66.70 & +6.53 & 15 \\
+adacontrast & 59.68 & 66.05 & +6.37 & 15 \\
+watt\_otsu & 65.12 & 69.83 & +4.71 & 15 \\
+etta & 62.27 & 66.98 & +4.70 & 15 \\
+tda & 61.84 & 66.46 & +4.61 & 15 \\
+clipartt & 68.04 & 71.40 & +3.36 & 15 \\
+unient & 79.28 & 75.98 & -3.30 & 0 \\
+\bottomrule
+\end{tabular}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Best TTA result per corruption}\\[-0.5mm]
+{\normalsize For each corruption, the best raw TTA and best TTA+CBC among the 9 evaluated TTA methods.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrlrlrr}
+\toprule
+Corruption & CLIP & Best raw TTA & Raw Top-1 & Best TTA+CBC & CBC Top-1 & Best CBC - CLIP \\
+\midrule
+brightness & 83.42 & watt & 89.79 & watt\_unient+CBC & \best{89.48} & +6.06 \\
+contrast & 61.94 & unient & 86.73 & unient+CBC & \best{82.23} & +20.29 \\
+defocus blur & 70.06 & unient & 82.13 & unient+CBC & \best{78.40} & +8.34 \\
+elastic transform & 53.18 & unient & 74.10 & unient+CBC & \best{72.84} & +19.66 \\
+fog & 68.45 & unient & 83.71 & watt\_unient+CBC & \best{81.61} & +13.16 \\
+frost & 76.61 & unient & 83.56 & watt\_unient+CBC & \best{82.63} & +6.02 \\
+gaussian noise & 37.73 & unient & 69.99 & unient+CBC & \best{67.50} & +29.77 \\
+glass blur & 42.18 & unient & 70.93 & unient+CBC & \best{67.61} & +25.43 \\
+impulse noise & 51.77 & unient & 75.43 & unient+CBC & \best{72.39} & +20.62 \\
+jpeg compression & 56.14 & unient & 73.21 & unient+CBC & \best{67.35} & +11.21 \\
+motion blur & 65.87 & unient & 80.65 & watt\_unient+CBC & \best{78.40} & +12.53 \\
+pixelate & 48.48 & unient & 78.92 & unient+CBC & \best{78.35} & +29.87 \\
+shot noise & 41.17 & unient & 72.20 & unient+CBC & \best{69.66} & +28.49 \\
+snow & 73.30 & unient & 84.54 & watt\_unient+CBC & \best{83.38} & +10.08 \\
+zoom blur & 72.56 & unient & 83.51 & unient+CBC & \best{79.50} & +6.94 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Original CLIP class-wise degradation}\\[-0.5mm]
+{\normalsize Clean CIFAR-10 vs CIFAR-10-C severity 5 pooled over 15 corruptions.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\begin{tabular}{lrrr}
+\toprule
+Class & Clean & Corrupted S5 & Change \\
+\midrule
+airplane & 90.70 & 63.33 & -27.37 \\
+automobile & 97.90 & 85.52 & -12.38 \\
+bird & 91.50 & 63.99 & -27.51 \\
+cat & 86.20 & 59.20 & -27.00 \\
+deer & 84.60 & 43.53 & -41.07 \\
+dog & 92.10 & 69.83 & -22.27 \\
+frog & 69.80 & 25.74 & -44.06 \\
+horse & 96.40 & 79.67 & -16.73 \\
+ship & 95.00 & 73.20 & -21.80 \\
+truck & 88.50 & 37.89 & -50.61 \\
+\bottomrule
+\end{tabular}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Brightness clean-to-corrupted centroid shift in PCA space}\\[-0.5mm]
+{\normalsize Clean and brightness-corrupted features are projected into one shared PCA space.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Class & Shift norm & PC1 shift & PC2 shift & PC3 shift \\
+\midrule
+truck & 0.12 & -0.09 & +0.09 & -0.01 \\
+horse & 0.12 & -0.05 & +0.10 & -0.01 \\
+dog & 0.11 & -0.04 & +0.10 & -0.02 \\
+automobile & 0.10 & -0.06 & +0.08 & -0.01 \\
+cat & 0.09 & -0.03 & +0.08 & -0.01 \\
+frog & 0.09 & -0.03 & +0.07 & +0.05 \\
+bird & 0.09 & -0.03 & +0.07 & +0.04 \\
+deer & 0.09 & -0.04 & +0.07 & +0.03 \\
+ship & 0.08 & -0.06 & +0.05 & +0.03 \\
+airplane & 0.07 & -0.06 & +0.04 & +0.02 \\
+\bottomrule
+\end{tabular}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Qualitative analysis artifacts}\\[-0.5mm]
+{\normalsize Figure artifacts stored under 05\_qualitative\_analysis.}
+\end{center}
+\vspace{1mm}
+{\scriptsize
+\begin{tabular}{lll}
+\toprule
+Artifact & Condition & Purpose \\
+\midrule
+15-corruption image grid & visualization artifact saved & Qualitative sample visualization \\
+Best PCA case & shot\_noise & Largest CBC gain corruption \\
+Worst PCA case & frost & Smallest CBC gain corruption \\
+Brightness shared PCA & brightness & Clean and corrupted feature clusters in one PCA space \\
+\bottomrule
+\end{tabular}
+}
+
+\clearpage
+\begin{center}
+{\Large\bfseries Appendix: TTA per-corruption results}\\[-0.5mm]
+{\normalsize Subset of columns from the 19-method TTA table. Top-1 accuracy (\%).}
+\end{center}
+\vspace{1mm}
+{	iny
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+Corruption & CLIP & CLIPArTT & +CBC & STAMP & +CBC & TDA & +CBC & AdaCont. & +CBC & WATT & +CBC & WATT-UniEnt & +CBC & ETTA & +CBC \\
+\midrule
+brightness & 83.42 & 84.42 & 85.28 & 83.40 & 86.51 & 85.46 & 86.98 & 77.29 & 83.44 & \best{89.79} & 89.41 & 89.59 & 89.48 & 86.60 & 87.17 \\
+contrast & 61.94 & 70.28 & 75.00 & 61.93 & 67.06 & 62.40 & 67.09 & 58.36 & 58.93 & 80.00 & 78.44 & \best{82.84} & 78.29 & 64.45 & 67.23 \\
+defocus blur & 70.06 & 69.42 & 72.45 & 70.06 & 74.66 & 72.41 & 75.20 & 70.09 & 74.68 & 54.81 & 75.82 & 68.95 & \best{76.27} & 72.54 & 74.67 \\
+elastic transform & 53.18 & 63.90 & 66.89 & 53.17 & 60.60 & 57.46 & 60.20 & 53.23 & 60.65 & 34.33 & 71.95 & 49.99 & \best{72.11} & 55.86 & 60.04 \\
+fog & 68.45 & 73.27 & 77.46 & 68.41 & 73.06 & 70.89 & 72.90 & 68.46 & 73.34 & 68.05 & 81.53 & 77.12 & \best{81.61} & 69.02 & 72.18 \\
+frost & 76.61 & 76.87 & 77.16 & 76.55 & 79.41 & 78.21 & 79.48 & 76.73 & 79.65 & 78.11 & 82.15 & 80.68 & \best{82.63} & 77.99 & 79.26 \\
+gaussian noise & 37.73 & 56.97 & 62.37 & 37.77 & 48.22 & 37.46 & 47.00 & 38.07 & 48.52 & 41.03 & 65.15 & 54.02 & \best{65.39} & 40.12 & 49.71 \\
+glass blur & 42.18 & 57.35 & 61.30 & 42.21 & 47.90 & 43.20 & 47.35 & 42.35 & 48.05 & 21.12 & 61.68 & 34.49 & \best{61.76} & 44.14 & 48.32 \\
+impulse noise & 51.77 & 64.14 & 66.69 & 51.70 & 62.95 & 55.67 & 61.27 & 51.88 & 63.09 & 34.75 & 71.03 & 50.73 & \best{72.02} & 54.90 & 63.90 \\
+jpeg compression & 56.14 & 59.82 & 64.36 & 56.08 & 62.44 & 57.70 & 62.47 & 56.33 & 62.52 & 36.29 & 67.04 & 53.98 & \best{67.12} & 57.59 & 62.17 \\
+motion blur & 65.87 & 69.68 & 74.06 & 65.86 & 72.69 & 67.71 & 72.77 & 66.17 & 72.64 & 38.36 & 78.39 & 71.48 & \best{78.40} & 67.78 & 73.76 \\
+pixelate & 48.48 & 66.02 & 69.88 & 48.47 & 57.21 & 46.76 & 56.25 & 48.60 & 57.18 & 38.14 & \best{70.32} & 53.72 & 70.05 & 49.42 & 57.23 \\
+shot noise & 41.17 & 60.10 & 64.54 & 41.17 & 52.73 & 42.60 & 52.50 & 41.56 & 52.95 & 40.17 & 68.87 & 58.88 & \best{69.21} & 43.32 & 53.15 \\
+snow & 73.30 & 75.74 & 76.98 & 73.30 & 77.51 & 75.68 & 77.65 & 73.41 & 77.65 & 72.94 & 83.11 & 77.63 & \best{83.38} & 75.24 & 77.69 \\
+zoom blur & 72.56 & 72.67 & 76.65 & 72.46 & 77.59 & 74.03 & 77.74 & 72.63 & 77.45 & 63.35 & \best{79.05} & 68.46 & 79.00 & 75.13 & 78.17 \\
+\bottomrule
+\end{tabular}
+}
+}
+
+
+\end{document}

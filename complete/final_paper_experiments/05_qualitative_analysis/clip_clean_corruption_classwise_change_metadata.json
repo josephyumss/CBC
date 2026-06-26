@@ -1,0 +1,29 @@
+{
+  "figure_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/clip_clean_corruption_classwise_change.pdf",
+  "figure_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/clip_clean_corruption_classwise_change.png",
+  "csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/clip_clean_corruption_classwise_change.csv",
+  "font_requested": "Times New Roman",
+  "font_available": true,
+  "font_file_used": "/home/josephyumss/workspace/LocalMerge/.font_cache/times.ttf",
+  "clean_cache": "/home/josephyumss/workspace/AIProject/complete/clip_zero_shot_claim/cache/logits/clean_all.pt",
+  "corrupted_cache_pattern": "/home/josephyumss/workspace/AIProject/complete/clip_zero_shot_claim/cache/logits/severity5_{corruption}_all.pt",
+  "corruptions": [
+    "brightness",
+    "contrast",
+    "defocus_blur",
+    "elastic_transform",
+    "fog",
+    "frost",
+    "gaussian_noise",
+    "glass_blur",
+    "impulse_noise",
+    "jpeg_compression",
+    "motion_blur",
+    "pixelate",
+    "shot_noise",
+    "snow",
+    "zoom_blur"
+  ],
+  "aggregation": "CIFAR10-C severity 5, all 15 corruptions pooled per class",
+  "title": null
+}

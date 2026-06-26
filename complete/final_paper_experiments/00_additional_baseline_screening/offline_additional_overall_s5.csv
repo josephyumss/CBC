@@ -1,0 +1,6 @@
+setting,method,top1,delta_vs_clip,num_samples,category,note,selected_for_extended_offline_tables
+severity5:overall,CLIP,60.195332765579224,0.0,150000,offline_reference,default CLIP logits,True
+severity5:overall,CBC Offline,64.9773359298706,4.782003164291382,150000,offline,global logit center subtraction,True
+severity5:overall,Sinkhorn-OT,61.342668533325195,1.1473357677459717,150000,offline,balanced optimal-transport assignment on all logits,True
+severity5:overall,PriorNorm,64.54600095748901,4.35066819190979,150000,offline,global predicted-prior normalization,True
+severity5:overall,LabelProp-kNN,58.38733333333333,-1.807999432245893,150000,offline,"per-corruption kNN propagation, k=20, alpha=0.5, iters=10",True

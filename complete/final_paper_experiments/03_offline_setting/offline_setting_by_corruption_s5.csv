@@ -1,0 +1,61 @@
+setting,corruption,method,top1,delta_vs_clip,num_samples,source
+severity5:brightness,brightness,CLIP,83.41000080108643,0.0,10000,rerun severity-5 corruption-wise features
+severity5:brightness,brightness,CBC Offline,86.69000267982483,3.2800018787384033,10000,one global class-logit center from all samples in this corruption
+severity5:brightness,brightness,InMaP,88.63999843597412,5.229997634887695,10000,rerun per corruption with full test features
+severity5:brightness,brightness,Frolic,87.33000159263611,3.9200007915496826,10000,rerun per corruption with full test features
+severity5:contrast,contrast,CLIP,61.94000244140625,0.0,10000,rerun severity-5 corruption-wise features
+severity5:contrast,contrast,CBC Offline,67.11999773979187,5.17999529838562,10000,one global class-logit center from all samples in this corruption
+severity5:contrast,contrast,InMaP,71.16000056266785,9.219998121261597,10000,rerun per corruption with full test features
+severity5:contrast,contrast,Frolic,70.13999819755554,8.199995756149292,10000,rerun per corruption with full test features
+severity5:defocus_blur,defocus_blur,CLIP,70.05000114440918,0.0,10000,rerun severity-5 corruption-wise features
+severity5:defocus_blur,defocus_blur,CBC Offline,74.91000294685364,4.860001802444458,10000,one global class-logit center from all samples in this corruption
+severity5:defocus_blur,defocus_blur,InMaP,77.02999711036682,6.979995965957642,10000,rerun per corruption with full test features
+severity5:defocus_blur,defocus_blur,Frolic,76.34000182151794,6.290000677108765,10000,rerun per corruption with full test features
+severity5:elastic_transform,elastic_transform,CLIP,53.15999984741211,0.0,10000,rerun severity-5 corruption-wise features
+severity5:elastic_transform,elastic_transform,CBC Offline,60.9499990940094,7.78999924659729,10000,one global class-logit center from all samples in this corruption
+severity5:elastic_transform,elastic_transform,InMaP,63.2099986076355,10.049998760223389,10000,rerun per corruption with full test features
+severity5:elastic_transform,elastic_transform,Frolic,62.62999773025513,9.469997882843018,10000,rerun per corruption with full test features
+severity5:fog,fog,CLIP,68.43000054359436,0.0,10000,rerun severity-5 corruption-wise features
+severity5:fog,fog,CBC Offline,73.089998960495,4.659998416900635,10000,one global class-logit center from all samples in this corruption
+severity5:fog,fog,InMaP,75.99999904632568,7.569998502731323,10000,rerun per corruption with full test features
+severity5:fog,fog,Frolic,74.54000115394592,6.1100006103515625,10000,rerun per corruption with full test features
+severity5:frost,frost,CLIP,76.62000060081482,0.0,10000,rerun severity-5 corruption-wise features
+severity5:frost,frost,CBC Offline,79.5799970626831,2.959996461868286,10000,one global class-logit center from all samples in this corruption
+severity5:frost,frost,InMaP,81.95000290870667,5.330002307891846,10000,rerun per corruption with full test features
+severity5:frost,frost,Frolic,80.79000115394592,4.1700005531311035,10000,rerun per corruption with full test features
+severity5:gaussian_noise,gaussian_noise,CLIP,37.83000111579895,0.0,10000,rerun severity-5 corruption-wise features
+severity5:gaussian_noise,gaussian_noise,CBC Offline,48.539999127388,10.70999801158905,10000,one global class-logit center from all samples in this corruption
+severity5:gaussian_noise,gaussian_noise,InMaP,51.64999961853027,13.819998502731323,10000,rerun per corruption with full test features
+severity5:gaussian_noise,gaussian_noise,Frolic,52.02999711036682,14.199995994567871,10000,rerun per corruption with full test features
+severity5:glass_blur,glass_blur,CLIP,42.1999990940094,0.0,10000,rerun severity-5 corruption-wise features
+severity5:glass_blur,glass_blur,CBC Offline,48.12000095844269,5.920001864433289,10000,one global class-logit center from all samples in this corruption
+severity5:glass_blur,glass_blur,InMaP,50.120002031326294,7.9200029373168945,10000,rerun per corruption with full test features
+severity5:glass_blur,glass_blur,Frolic,49.73999857902527,7.539999485015869,10000,rerun per corruption with full test features
+severity5:impulse_noise,impulse_noise,CLIP,51.71999931335449,0.0,10000,rerun severity-5 corruption-wise features
+severity5:impulse_noise,impulse_noise,CBC Offline,62.92999982833862,11.21000051498413,10000,one global class-logit center from all samples in this corruption
+severity5:impulse_noise,impulse_noise,InMaP,65.79999923706055,14.079999923706055,10000,rerun per corruption with full test features
+severity5:impulse_noise,impulse_noise,Frolic,65.6499981880188,13.929998874664307,10000,rerun per corruption with full test features
+severity5:jpeg_compression,jpeg_compression,CLIP,56.129997968673706,0.0,10000,rerun severity-5 corruption-wise features
+severity5:jpeg_compression,jpeg_compression,CBC Offline,62.69000172615051,6.560003757476807,10000,one global class-logit center from all samples in this corruption
+severity5:jpeg_compression,jpeg_compression,InMaP,65.90999960899353,9.780001640319824,10000,rerun per corruption with full test features
+severity5:jpeg_compression,jpeg_compression,Frolic,64.50999975204468,8.380001783370972,10000,rerun per corruption with full test features
+severity5:motion_blur,motion_blur,CLIP,65.88000059127808,0.0,10000,rerun severity-5 corruption-wise features
+severity5:motion_blur,motion_blur,CBC Offline,72.86999821662903,6.989997625350952,10000,one global class-logit center from all samples in this corruption
+severity5:motion_blur,motion_blur,InMaP,75.26000142097473,9.380000829696655,10000,rerun per corruption with full test features
+severity5:motion_blur,motion_blur,Frolic,74.40000176429749,8.52000117301941,10000,rerun per corruption with full test features
+severity5:pixelate,pixelate,CLIP,48.44000041484833,0.0,10000,rerun severity-5 corruption-wise features
+severity5:pixelate,pixelate,CBC Offline,57.419997453689575,8.979997038841248,10000,one global class-logit center from all samples in this corruption
+severity5:pixelate,pixelate,InMaP,60.79000234603882,12.35000193119049,10000,rerun per corruption with full test features
+severity5:pixelate,pixelate,Frolic,59.89000201225281,11.45000159740448,10000,rerun per corruption with full test features
+severity5:shot_noise,shot_noise,CLIP,41.190001368522644,0.0,10000,rerun severity-5 corruption-wise features
+severity5:shot_noise,shot_noise,CBC Offline,52.85999774932861,11.66999638080597,10000,one global class-logit center from all samples in this corruption
+severity5:shot_noise,shot_noise,InMaP,55.52999973297119,14.339998364448547,10000,rerun per corruption with full test features
+severity5:shot_noise,shot_noise,Frolic,55.04999756813049,13.85999619960785,10000,rerun per corruption with full test features
+severity5:snow,snow,CLIP,73.30999970436096,0.0,10000,rerun severity-5 corruption-wise features
+severity5:snow,snow,CBC Offline,77.70000100135803,4.39000129699707,10000,one global class-logit center from all samples in this corruption
+severity5:snow,snow,InMaP,80.15999794006348,6.849998235702515,10000,rerun per corruption with full test features
+severity5:snow,snow,Frolic,78.86999845504761,5.5599987506866455,10000,rerun per corruption with full test features
+severity5:zoom_blur,zoom_blur,CLIP,72.54999876022339,0.0,10000,rerun severity-5 corruption-wise features
+severity5:zoom_blur,zoom_blur,CBC Offline,77.49000191688538,4.940003156661987,10000,one global class-logit center from all samples in this corruption
+severity5:zoom_blur,zoom_blur,InMaP,79.68000173568726,7.130002975463867,10000,rerun per corruption with full test features
+severity5:zoom_blur,zoom_blur,Frolic,78.90999913215637,6.360000371932983,10000,rerun per corruption with full test features

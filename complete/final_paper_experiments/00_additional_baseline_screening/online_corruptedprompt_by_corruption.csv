@@ -1,0 +1,16 @@
+setting,corruption,method,top1,delta_vs_clip,num_samples,category,note
+severity5:brightness,brightness,CorruptedPrompt,83.91000032424927,0.48999786376953125,10000,online,generic_corruption_prompt
+severity5:contrast,contrast,CorruptedPrompt,58.00999999046326,-3.930002450942993,10000,online,generic_corruption_prompt
+severity5:defocus_blur,defocus_blur,CorruptedPrompt,67.94999837875366,-2.110004425048828,10000,online,generic_corruption_prompt
+severity5:elastic_transform,elastic_transform,CorruptedPrompt,51.239997148513794,-1.940000057220459,10000,online,generic_corruption_prompt
+severity5:fog,fog,CorruptedPrompt,68.30999851226807,-0.1399993896484375,10000,online,generic_corruption_prompt
+severity5:frost,frost,CorruptedPrompt,76.80000066757202,0.1900017261505127,10000,online,generic_corruption_prompt
+severity5:gaussian_noise,gaussian_noise,CorruptedPrompt,43.25999915599823,5.529999732971191,10000,online,generic_corruption_prompt
+severity5:glass_blur,glass_blur,CorruptedPrompt,35.2400004863739,-6.939998269081116,10000,online,generic_corruption_prompt
+severity5:impulse_noise,impulse_noise,CorruptedPrompt,58.45999717712402,6.689995527267456,10000,online,generic_corruption_prompt
+severity5:jpeg_compression,jpeg_compression,CorruptedPrompt,58.420002460479736,2.2800028324127197,10000,online,generic_corruption_prompt
+severity5:motion_blur,motion_blur,CorruptedPrompt,66.94999933242798,1.080000400543213,10000,online,generic_corruption_prompt
+severity5:pixelate,pixelate,CorruptedPrompt,42.39000082015991,-6.09000027179718,10000,online,generic_corruption_prompt
+severity5:shot_noise,shot_noise,CorruptedPrompt,47.90000021457672,6.7299991846084595,10000,online,generic_corruption_prompt
+severity5:snow,snow,CorruptedPrompt,72.96000123023987,-0.3399968147277832,10000,online,generic_corruption_prompt
+severity5:zoom_blur,zoom_blur,CorruptedPrompt,71.03999853134155,-1.5200018882751465,10000,online,generic_corruption_prompt

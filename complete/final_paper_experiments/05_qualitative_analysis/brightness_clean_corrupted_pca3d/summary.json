@@ -1,0 +1,18 @@
+{
+  "corruption": "brightness",
+  "severity": 5,
+  "clean_feature_cache": "/home/josephyumss/workspace/AIProject/centroid_shifting/feature_cluster_pca_3d/cifar10/severity_5/cache/clean_all.pt",
+  "corrupted_feature_cache": "/home/josephyumss/workspace/AIProject/centroid_shifting/feature_cluster_pca_3d/cifar10/severity_5/cache/brightness_all.pt",
+  "num_clean_samples": 10000,
+  "num_corrupted_samples": 10000,
+  "pca_fit": "fit on clean + brightness-corrupted image features",
+  "explained_variance_ratio_pc1_pc2_pc3": [
+    0.12614066898822784,
+    0.06292008608579636,
+    0.06091833859682083
+  ],
+  "output_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/brightness_clean_corrupted_pca3d/clean_brightness_features_pca3d_overlay.png",
+  "output_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/brightness_clean_corrupted_pca3d/clean_brightness_features_pca3d_overlay.pdf",
+  "centroid_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/brightness_clean_corrupted_pca3d/clean_brightness_centroids_pca3d.csv",
+  "font": "Times Newer Roman"
+}

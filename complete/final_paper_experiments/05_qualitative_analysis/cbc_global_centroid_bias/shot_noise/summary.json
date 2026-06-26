@@ -1,0 +1,18 @@
+{
+  "bar_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_global_centroid_bias/shot_noise/shot_noise_centroid_text_logits.csv",
+  "bar_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_global_centroid_bias/shot_noise/shot_noise_centroid_text_probabilities_bar.png",
+  "cbc_logit_mean": 2.454617131775194e-08,
+  "cbc_logit_range": 7.211929187178612e-08,
+  "cbc_logit_std": 2.435522894472797e-08,
+  "cbc_probability_range": 7.450580596923828e-09,
+  "cbc_probability_std": 1.0269916472793739e-08,
+  "corruption": "shot_noise",
+  "delta_norm": 0.24456308782100677,
+  "least_squares_residual_l2": 1.2377833513710357e-07,
+  "num_samples": 10000,
+  "pca_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/cbc_global_centroid_bias/shot_noise/shot_noise_global_centroid_text_pca3d.png",
+  "raw_logit_range": 0.02423146367073059,
+  "raw_logit_std": 0.008468905463814735,
+  "raw_probability_range": 0.0024262219667434692,
+  "raw_probability_std": 0.0008478548261336982
+}

@@ -1,0 +1,13 @@
+{
+  "best_corruption": "brightness",
+  "best_delta_top1": 3.2899975776672363,
+  "fix_count": 15,
+  "label_id": 6,
+  "label_name": "frog",
+  "net_fix_count": 15,
+  "regress_count": 0,
+  "sample_index": 8798,
+  "severity": 5,
+  "worst_corruption": "glass_blur",
+  "worst_delta_top1": 5.85000216960907
+}

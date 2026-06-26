@@ -1,0 +1,8 @@
+setting,method,top1,delta_vs_clip,num_samples,source
+severity5:overall,CLIP,60.19066572189331,0.0,150000,logit cache
+severity5:overall,CBC Offline,64.97799754142761,4.787331819534302,150000,single global center from all 150k severity-5 logits
+severity5:overall,InMaP,67.22533106803894,7.03466534614563,150000,full-suite transductive result
+severity5:overall,Frolic,66.76133275032043,6.570667028427124,150000,full-suite transductive result
+severity5:overall,Sinkhorn-OT,61.342668533325195,1.1473357677459717,150000,balanced optimal-transport assignment on all logits
+severity5:overall,PriorNorm,64.54600095748901,4.35066819190979,150000,global predicted-prior normalization
+severity5:overall,LabelProp-kNN,58.38733333333333,-1.807999432245893,150000,"per-corruption kNN propagation, k=20, alpha=0.5, iters=10"

@@ -1,0 +1,50 @@
+{
+  "additional_baseline_screening": "00_additional_baseline_screening",
+  "created_from": {
+    "clip_cbc_claim_archive": "/home/josephyumss/workspace/AIProject/complete/clip_zero_shot_claim",
+    "full_suite_tables": "/home/josephyumss/workspace/AIProject/cliptta/work/zero_shot_enhancement_full_suite/cifar10_full_zero_shot_enhancers_20260616/tables",
+    "tta_archive": "/home/josephyumss/workspace/AIProject/complete/tta_baseline_cbc_suite"
+  },
+  "extended_tables": {
+    "clean_online": "04_clean_image/clean_online_offline_extended.csv",
+    "main_online": "01_main_result_corruption_s5/main_corruption_s5_overall_extended_online.csv",
+    "offline": "03_offline_setting/offline_setting_overall_s5_extended.csv"
+  },
+  "offline_zero_shot_methods": [
+    "CLIP",
+    "CBC Offline",
+    "InMaP",
+    "Frolic"
+  ],
+  "online_zero_shot_methods": [
+    "CLIP",
+    "CLIP + CBC",
+    "CALIP",
+    "WaffleCLIP",
+    "CuPL"
+  ],
+  "sections": [
+    "01_main_result_corruption_s5",
+    "02_robustness_online",
+    "03_offline_setting",
+    "04_clean_image",
+    "05_qualitative_analysis",
+    "06_cbc_with_tta_methods"
+  ],
+  "sections_detail": {
+    "06_cbc_with_tta_methods": {
+      "overall_long_19methods": "06_cbc_with_tta_methods/tta_overall_long_19methods.csv"
+    }
+  },
+  "tta_methods": [
+    "clipartt",
+    "unient",
+    "stamp",
+    "tda",
+    "adacontrast",
+    "watt",
+    "watt_otsu",
+    "watt_unient",
+    "etta"
+  ]
+}

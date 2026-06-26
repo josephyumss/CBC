@@ -1,0 +1,23 @@
+{
+  "clean_feature_cache": "/home/josephyumss/workspace/AIProject/complete/clip_zero_shot_claim/visualizations/feature_cluster_pca_3d/cifar10/severity_5/cache/clean_all.pt",
+  "feature_cache": "/home/josephyumss/workspace/AIProject/complete/zero_shot_enhancement_baselines/cache/cifar10c_severity5_all_global_features.pt",
+  "logit_cache": "/home/josephyumss/workspace/AIProject/complete/clip_zero_shot_claim/cache/logits",
+  "note": "Additional baseline screening; methods marked style/local are not claimed as exact official reproductions.",
+  "offline_methods": [
+    "CLIP",
+    "CBC Offline",
+    "Sinkhorn-OT",
+    "PriorNorm",
+    "LabelProp-kNN"
+  ],
+  "online_methods": [
+    "CLIP",
+    "CorruptedPrompt",
+    "PromptEns-8",
+    "PromptEns-80",
+    "LogitEns-8",
+    "LogitEns-80",
+    "AdaptivePromptEns-80",
+    "Waffle+PromptEns"
+  ]
+}

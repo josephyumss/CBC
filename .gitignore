@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+
+# Runtime outputs
+cliptta/work/
+cliptta/logs/
+work/
+logs/
+outputs/
+
+# Datasets and checkpoints
+data/
+DATA/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Local environments
+.venv/
+venv/
+env/
+.env

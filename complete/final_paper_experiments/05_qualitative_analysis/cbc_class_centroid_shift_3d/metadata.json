@@ -1,0 +1,14 @@
+{
+  "base_model_name": "clip-ViT-B/16",
+  "batch_size": 256,
+  "family": "cifar10",
+  "interpretation": "CBC is a logit-space operation. For visualization, the class centroids are shifted by the minimum-norm feature displacement delta satisfying text_features @ delta ~= mean_logits.",
+  "max_samples_per_class": 200,
+  "seed": 42,
+  "severity": 5,
+  "shift_types": [
+    "brightness",
+    "glass_blur"
+  ],
+  "template": "a photo of a {}"
+}

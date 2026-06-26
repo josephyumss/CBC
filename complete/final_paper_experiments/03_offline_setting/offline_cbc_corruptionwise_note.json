@@ -1,0 +1,10 @@
+{
+  "important_note": "The previous 64.98 CBC Offline number is a mixed-corruption global-center setting over all 150k severity-5 logits. The proper corruption-wise offline macro evaluation computes one global CBC bias per corruption and averages over the 15 corruptions.",
+  "mixed_global_cbc_offline_top1": 64.97799754142761,
+  "corruptionwise_macro_cbc_offline_top1": 66.8646667400996,
+  "corruptionwise_macro_clip_top1": 60.190666715304054,
+  "corruptionwise_macro_delta_vs_clip": 6.674000024795539,
+  "online_corruptionwise_cbc_top1": 66.72533353169759,
+  "offline_minus_online_cbc_macro": 0.1393332084019979,
+  "definition": "For corruption-wise offline CBC, compute CLIP logits for all 10k images of one corruption at severity 5, subtract the class-wise mean logit vector computed from those 10k logits, evaluate accuracy, and average over 15 corruptions."
+}

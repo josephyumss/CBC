@@ -1,0 +1,16 @@
+setting,corruption,method,top1,delta_vs_clip,num_samples,category,note
+severity5:brightness,brightness,LogitEns-8,85.29999852180481,1.8799960613250732,10000,online,CLIP_select_prompt_logit_average
+severity5:contrast,contrast,LogitEns-8,63.66000175476074,1.7199993133544922,10000,online,CLIP_select_prompt_logit_average
+severity5:defocus_blur,defocus_blur,LogitEns-8,72.28000164031982,2.219998836517334,10000,online,CLIP_select_prompt_logit_average
+severity5:elastic_transform,elastic_transform,LogitEns-8,55.08999824523926,1.9100010395050049,10000,online,CLIP_select_prompt_logit_average
+severity5:fog,fog,LogitEns-8,71.60999774932861,3.1599998474121094,10000,online,CLIP_select_prompt_logit_average
+severity5:frost,frost,LogitEns-8,78.96999716758728,2.3599982261657715,10000,online,CLIP_select_prompt_logit_average
+severity5:gaussian_noise,gaussian_noise,LogitEns-8,40.88999927043915,3.1599998474121094,10000,online,CLIP_select_prompt_logit_average
+severity5:glass_blur,glass_blur,LogitEns-8,42.500001192092896,0.3200024366378784,10000,online,CLIP_select_prompt_logit_average
+severity5:impulse_noise,impulse_noise,LogitEns-8,57.06999897956848,5.299997329711914,10000,online,CLIP_select_prompt_logit_average
+severity5:jpeg_compression,jpeg_compression,LogitEns-8,61.10000014305115,4.960000514984131,10000,online,CLIP_select_prompt_logit_average
+severity5:motion_blur,motion_blur,LogitEns-8,68.73999834060669,2.869999408721924,10000,online,CLIP_select_prompt_logit_average
+severity5:pixelate,pixelate,LogitEns-8,49.799999594688416,1.3199985027313232,10000,online,CLIP_select_prompt_logit_average
+severity5:shot_noise,shot_noise,LogitEns-8,45.64000070095062,4.469999670982361,10000,online,CLIP_select_prompt_logit_average
+severity5:snow,snow,LogitEns-8,75.70000290870667,2.4000048637390137,10000,online,CLIP_select_prompt_logit_average
+severity5:zoom_blur,zoom_blur,LogitEns-8,74.15000200271606,1.5900015830993652,10000,online,CLIP_select_prompt_logit_average

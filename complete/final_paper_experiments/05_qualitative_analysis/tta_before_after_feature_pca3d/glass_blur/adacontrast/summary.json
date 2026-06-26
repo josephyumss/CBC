@@ -1,0 +1,32 @@
+{
+  "adaptation_batches": 13,
+  "centroid_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/tta_before_after_feature_pca3d/glass_blur/adacontrast/adacontrast_glass_blur_centroids_pca3d.csv",
+  "corruption": "glass_blur",
+  "feature_update_type": "visual_encoder_or_method_state",
+  "max_class_centroid_l2_delta": 0.0726112648844719,
+  "max_feature_l2_delta": 0.26380738615989685,
+  "mean_class_centroid_l2_delta": 0.060312189161777496,
+  "mean_feature_l2_delta": 0.09698595106601715,
+  "method": "adacontrast",
+  "method_cli_tokens": [
+    "--adaptation",
+    "adacontrast",
+    "--batch_size",
+    "64",
+    "--optimizer_type",
+    "sgd",
+    "--lr",
+    "1e-3",
+    "--beta_reg",
+    "0.0"
+  ],
+  "num_samples": 800,
+  "output_pdf": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/tta_before_after_feature_pca3d/glass_blur/adacontrast/adacontrast_glass_blur_before_after_features_pca3d.pdf",
+  "output_png": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/tta_before_after_feature_pca3d/glass_blur/adacontrast/adacontrast_glass_blur_before_after_features_pca3d.png",
+  "plain_text_head_top1_after": 41.624999046325684,
+  "plain_text_head_top1_before": 42.124998569488525,
+  "runtime_batch_size": 64,
+  "runtime_steps": 10,
+  "severity": 5,
+  "status": "success"
+}

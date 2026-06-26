@@ -1,0 +1,12 @@
+setting,method,top1,delta_vs_clip,num_samples,batch_size,top1_std,note
+severity5:overall,CLIP,60.19066572189331,0.0,150000,,,
+severity5:overall,CLIP + CBC,64.72933292388916,4.53866720199585,150000,128,,
+severity5:overall,CALIP,57.40266442298889,-2.788001298904419,150000,,,
+severity5:overall,WaffleCLIP,63.20428592818124,3.013620206287932,150000,,0.11892949434168762,
+severity5:overall,CuPL,63.07666897773743,2.886003255844116,150000,,,
+severity5:overall,PromptEns-8,63.03933262825012,2.8439998626708984,150000,,,CLIP_select_prompt_feature_average
+severity5:overall,PromptEns-80,62.75399923324585,2.558666467666626,150000,,,CLIP_all_prompt_feature_average
+severity5:overall,LogitEns-8,62.833333015441895,2.638000249862671,150000,,,CLIP_select_prompt_logit_average
+severity5:overall,LogitEns-80,62.594664096832275,2.3993313312530518,150000,,,CLIP_all_prompt_logit_average
+severity5:overall,AdaptivePromptEns-80,62.72266507148743,2.527332305908203,150000,,,AutoCLIP_style_per_image_prompt_weighting
+severity5:overall,Waffle+PromptEns,62.76666522026062,2.5713324546813965,150000,,,WaffleCLIP_descriptors_plus_CLIP_prompt_ensemble

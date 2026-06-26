@@ -1,0 +1,71 @@
+batch_size,method,top1,delta_vs_clip,note
+1,CLIP,60.19066572189331,0.0,
+1,CLIP + CBC,64.97266888618469,4.782003164291382,
+1,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+1,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+1,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+1,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+1,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+2,CLIP,60.19066572189331,0.0,
+2,CLIP + CBC,55.874669551849365,-4.315996170043945,
+2,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+2,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+2,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+2,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+2,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+4,CLIP,60.19066572189331,0.0,
+4,CLIP + CBC,60.54199934005737,0.3513336181640625,
+4,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+4,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+4,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+4,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+4,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+8,CLIP,60.19066572189331,0.0,
+8,CLIP + CBC,62.51533627510071,2.3246705532073975,
+8,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+8,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+8,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+8,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+8,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+16,CLIP,60.19066572189331,0.0,
+16,CLIP + CBC,63.63400220870972,3.4433364868164062,
+16,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+16,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+16,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+16,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+16,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+32,CLIP,60.19066572189331,0.0,
+32,CLIP + CBC,64.24266695976257,4.052001237869263,
+32,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+32,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+32,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+32,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+32,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+64,CLIP,60.19066572189331,0.0,
+64,CLIP + CBC,64.54866528511047,4.357999563217163,
+64,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+64,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+64,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+64,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+64,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+128,CLIP,60.19066572189331,0.0,
+128,CLIP + CBC,64.72933292388916,4.53866720199585,
+128,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+128,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+128,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+128,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+128,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+256,CLIP,60.19066572189331,0.0,
+256,CLIP + CBC,64.82999920845032,4.639333486557007,
+256,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+256,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+256,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+256,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+256,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison
+512,CLIP,60.19066572189331,0.0,
+512,CLIP + CBC,64.9126648902893,4.721999168395996,
+512,CALIP,57.40266442298889,-2.788001298904419,batch-independent score repeated for comparison
+512,WaffleCLIP,63.20428592818124,3.013620206287932,batch-independent score repeated for comparison
+512,CuPL,63.07666897773743,2.886003255844116,batch-independent score repeated for comparison
+512,InMaP,67.22533106803894,7.03466534614563,batch-independent score repeated for comparison
+512,Frolic,66.76133275032043,6.570667028427124,batch-independent score repeated for comparison

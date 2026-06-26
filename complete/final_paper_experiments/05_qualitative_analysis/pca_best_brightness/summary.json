@@ -1,0 +1,17 @@
+{
+  "corruption": "brightness",
+  "files": {
+    "centroid_csv": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/pca_best_brightness/centroids_pca3d.csv",
+    "centroid_plot": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/pca_best_brightness/centroids_and_text_pca3d.png",
+    "clean_plot": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/pca_best_brightness/clean_features_pca3d.png",
+    "corrupted_plot": "/home/josephyumss/workspace/AIProject/complete/final_paper_experiments/05_qualitative_analysis/pca_best_brightness/corrupted_features_pca3d.png"
+  },
+  "num_classes": 10,
+  "num_samples": 10000,
+  "pca_basis_norms": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "severity": 5
+}

@@ -1,0 +1,5 @@
+setting,method,top1,num_corruptions,delta_vs_clip,source
+severity5:corruptionwise_macro,CLIP,60.190666913986206,15,0.0,rerun macro average of offline_setting_by_corruption_s5.csv
+severity5:corruptionwise_macro,CBC Offline,66.86399976412456,15,6.673332850138351,rerun macro average of offline_setting_by_corruption_s5.csv
+severity5:corruptionwise_macro,InMaP,69.52600002288818,15,9.335333108901978,rerun macro average of offline_setting_by_corruption_s5.csv
+severity5:corruptionwise_macro,Frolic,68.72133294741313,15,8.530666033426925,rerun macro average of offline_setting_by_corruption_s5.csv
